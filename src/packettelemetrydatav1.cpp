@@ -155,6 +155,18 @@ unsigned int PacketTelemetryDataV1::race_state_flags() const {
 	return racestateflags_.ls3bits();
 }
 
+unsigned int PacketTelemetryDataV1::lap_invalidated() const {
+	return racestateflags_.eight_bit();
+}
+
+unsigned int PacketTelemetryDataV1::antiLock_active() const {
+	return racestateflags_.sixteen_bit();
+}
+
+unsigned int PacketTelemetryDataV1::boost_active() const {
+	return racestateflags_.thirytwo_bit();
+}
+
 unsigned int PacketTelemetryDataV1::laps_in_event() const {
 	return lapsinevent_.u8();
 }

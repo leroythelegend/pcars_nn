@@ -1,2 +1,6 @@
 lib/
 obj/
+.vscode/
+bin/main.o
+bin/pcars
+

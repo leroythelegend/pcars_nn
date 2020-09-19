@@ -23,6 +23,7 @@
 #include "decoder56participantinfo.h"
 #include "decoder2timesu8.h"
 #include "decoderu32.h"
+#include "decoder1bit2bit3bitls3bitss.h"
 
 namespace pcars {
 
@@ -172,6 +173,9 @@ namespace pcars {
 		/// \return race state
 
 		unsigned int race_state_flags() const;
+		unsigned int lap_invalidated() const;
+		unsigned int antiLock_active() const;
+		unsigned int boost_active() const;
 
 		/// \brief Laps in event
 		///
@@ -441,7 +445,7 @@ namespace pcars {
 		DecoderU8 unfilteredbrake_;
 		DecoderS8 unfilteredsteering_;
 		DecoderU8 unfilteredclutch_;
-		Decoder3bit racestateflags_;
+		Decoder1bit2bit3bitls3bitss racestateflags_;
 		DecoderU8 lapsinevent_;
 		DecoderF32 bestlaptime_;
 		DecoderF32 lastlaptime_;
