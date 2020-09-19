@@ -1,14 +1,8 @@
-# Rough Idea Project Cars C++
+# Rough Idea Project Cars C++ NN
 
 ## Description
 
-Simpler CPP Classes for capturing and processing Project Cars UDP packets.
-
-Example of all the format 1 and format 2 attributes can be seen in myprocess.cpp.
-
-NOTE: I'm still updating the comments for the Packets.
-
-Also have done some classes in CSharp https://github.com/leroythelegend/rough_idea_project_cars_csharp and swift https://github.com/leroythelegend/rough_idea_project_cars_swift
+Just an idea I have.
 
 ## Contents
 
@@ -22,10 +16,10 @@ Also have done some classes in CSharp https://github.com/leroythelegend/rough_id
 Prerequiste you MUST have installed xcode and xcode command line tools, google this and follow the instructions from the Apple website.
 
 * Open a Terminal
-* Change Directory (CD) to your new local repo "src" directory (dir).
+* Change Directory (CD) to your new local repo.
 
 ```
-USER# cd /Users/You/rough_idea_project_cars_cpp/src
+USER# cd /Users/You/pcars_nn
 ```
 
 * Set up obj and lib dirs, this only needs to be done once.
@@ -75,10 +69,10 @@ This will not do anything until you go out on the track and then each of the imp
 Prerequiste you MUST have installed g++, use apt-get or yum.
 
 * Open a Terminal
-* Change Directory (CD) to your new local repo "src" directory (dir).
+* Change Directory (CD) to your new local repo.
 
 ```
-USER# cd /Home/You/rough_idea_project_cars_cpp/src
+USER# cd /Home/You/pcars_nn/
 ```
 
 * Set up obj and lib dirs, this only needs to be done once.
